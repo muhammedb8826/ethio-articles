@@ -3,7 +3,8 @@ import { useState } from "react";
 import { CgClose, CgMenuRight } from "react-icons/cg";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+import logo from "../assets/img/geez-logo.png";
+import Image from "next/image";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -17,13 +18,20 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar bg-green-800">
+    <nav className="navbar bg-slate-900">
       <div className="container">
-        <div className="logo text-xl">
-         Geez-articles
-        </div>
+        <Link
+          className={`link ${
+            pathname === "/" ? "active" : ""
+          } logo text-xl flex items-center gap-1 hover:cursor-pointer`}
+          href="/"
+          onClick={hideNavbar}
+        >
+          <Image src={logo} alt="geez-logo" className="w-10" />
+          <span>eez-articles</span>
+        </Link>
         <div className="menu-icon text-xl" onClick={handleShowNavbar}>
-          {showNavbar ? <CgClose /> : <CgMenuRight /> }
+          {showNavbar ? <CgClose /> : <CgMenuRight />}
         </div>
         <div className={`nav-elements  ${showNavbar && "active"}`}>
           <ul>
@@ -65,7 +73,9 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                className={`link ${pathname === "/get-started" ? "active" : ""}`}
+                className={`link ${
+                  pathname === "/get-started" ? "active" : ""
+                }`}
                 href="/get-started"
                 onClick={hideNavbar}
               >

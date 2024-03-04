@@ -35,9 +35,13 @@ body {
 
 .navbar {
   height: 60px;
-  background-color: #166534;
   color: #fcfcfc;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in;
+
 }
 
 .logo {
@@ -83,13 +87,13 @@ body {
   background-color: white;
 }
 
-.linear-bg {
-  background: linear-gradient(to right, #2ecc71, #27ae60, #16a085, #1abc9c);
+/* .linear-bg {
+  background: linear-gradient(to right, slategray, #2F4F4F, #708090, #778899);
 }
 
 .linear-button {
-  background: linear-gradient(to right, #2ecc71, #27ae60, #16a085, #1abc9c);
-}
+  background: linear-gradient(to right, slategray, #2F4F4F, #708090, #778899);
+} */
 
 @media (max-width: 768px) {
   .nav-elements ul li:not(:last-child) {
@@ -107,13 +111,15 @@ body {
     position: absolute;
     right: 0;
     top: 60px;
-    background-color: #166534;
+    background-color: rgba(0, 0, 0, 0.816);
     width: 0px;
     color: #fcfcfc;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
     overflow: hidden;
     z-index: 100;
+    height: 100vh;
+    overflow: hidden;
   }
 
   .nav-elements.active {
