@@ -3,7 +3,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="flex flex-col lg:justify-end font-poppins">
-      <div className="w-full bg-green-900 pt-11 dark:bg-gray-900 ">
+      <div className="w-full bg-slate-900 bg pt-11 dark:bg-gray-900 ">
         <div className="justify-center flex-1 max-w-6xl px-4 py-4 mx-auto lg:py-0">
           <div className="flex flex-wrap items-center justify-between pb-4 border-b border-gray-500 dark:border-gray-700 lg:justify-between">
             <h2 className="mb-4 text-2xl font-semibold tracking-wider text-gray-300 lg:mb-0 dark:text-gray-400">
@@ -20,7 +20,7 @@ const Footer = () => {
               <div className="w-full py-1 lg:w-auto lg:py-0">
                 <Link
                   href="#"
-                  className="inline-block w-full px-5 py-4 font-medium leading-4 text-center bg-green-200 rounded-md dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 hover:bg-green-300"
+                  className="inline-block w-full px-5 py-4 font-medium leading-4 text-center bg-slate-200 rounded-md dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 hover:bg-slate-300"
                 >
                   Subscribe
                 </Link>
@@ -43,7 +43,7 @@ const Footer = () => {
                 <Link
                   href="#"
                   type="button"
-                  className="m-1 leading-normal text-gray-300 uppercase transition duration-150 ease-in-out border-2 border-gray-300 rounded-full dark:border-gray-400 dark:hover:bg-gray-800 hover:border-green-700 hover:bg-green-700 w-9 h-9"
+                  className="m-1 leading-normal text-gray-300 uppercase transition duration-150 ease-in-out border-2 border-gray-300 rounded-full dark:border-gray-400 dark:hover:bg-gray-800 hover:border-slate-700 hover:bg-slate-700 w-9 h-9"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ const Footer = () => {
                 <Link
                   href="#"
                   type="button"
-                  className="m-1 leading-normal text-gray-300 uppercase transition duration-150 ease-in-out border-2 border-gray-300 rounded-full dark:border-gray-400 dark:text-gray-400 dark:hover:bg-gray-800 hover:border-green-500 hover:bg-green-500 w-9 h-9"
+                  className="m-1 leading-normal text-gray-300 uppercase transition duration-150 ease-in-out border-2 border-gray-300 rounded-full dark:border-gray-400 dark:text-gray-400 dark:hover:bg-gray-800 hover:border-slate-500 hover:bg-slate-500 w-9 h-9"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ const Footer = () => {
                 <Link
                   href="#"
                   type="button"
-                  className="m-1 leading-normal text-gray-300 uppercase transition duration-150 ease-in-out border-2 border-gray-300 rounded-full dark:border-gray-400 dark:text-gray-400 dark:hover:bg-gray-800 hover:border-green-700 text-text-gray-50 hover:bg-green-700 w-9 h-9"
+                  className="m-1 leading-normal text-gray-300 uppercase transition duration-150 ease-in-out border-2 border-gray-300 rounded-full dark:border-gray-400 dark:text-gray-400 dark:hover:bg-gray-800 hover:border-slate-700 text-text-gray-50 hover:bg-slate-700 w-9 h-9"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +91,7 @@ const Footer = () => {
                 <Link
                   href="#"
                   type="button"
-                  className="m-1 leading-normal text-gray-400 uppercase transition duration-150 ease-in-out border-2 border-gray-300 rounded-full dark:border-gray-400 dark:text-gray-400 dark:hover:bg-gray-800 hover:border-green-600 hover:bg-green-600 w-9 h-9"
+                  className="m-1 leading-normal text-gray-400 uppercase transition duration-150 ease-in-out border-2 border-gray-300 rounded-full dark:border-gray-400 dark:text-gray-400 dark:hover:bg-gray-800 hover:border-slate-600 hover:bg-slate-600 w-9 h-9"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -294,7 +294,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="py-5 text-center text-gray-200 bg-green-800 dark:bg-gray-800 dark:text-gray-400">
+        <div className="py-5 text-center text-gray-200 bg-slate-800 dark:bg-gray-800 dark:text-gray-400">
           <span>© Copyright 2024 Geez-articles Inc. All Rights Reserved</span>
         </div>
       </div>

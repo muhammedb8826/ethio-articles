@@ -19,7 +19,7 @@ export default function Home() {
           </p>
           <Link
             href="get-started"
-            className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-900"
+            className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:ring-slate-300 dark:focus:ring-slate-900"
           >
             Get started
             <svg
@@ -50,7 +50,7 @@ export default function Home() {
       <section className="flex items-center py-16 bg-white lg:py-20 font-poppins dark:bg-gray-900">
         <div className="justify-center flex-1 max-w-5xl px-4 py-4 mx-auto text-left lg:py-10 ">
           <div className="mb-10 text-center">
-            <span className="block mb-4 text-xs font-semibold leading-4 tracking-widest text-center text-green-500 uppercase dark:text-gray-400">
+            <span className="block mb-4 text-xs font-semibold leading-4 tracking-widest text-center text-slate-500 uppercase dark:text-gray-400">
               Our blog
             </span>
             <h1 className="text-3xl font-bold capitalize dark:text-white">

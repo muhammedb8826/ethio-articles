@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar bg-green-800">
+    <nav className="navbar bg-slate-900">
       <div className="container">
         <div className="logo text-xl">
          Geez-articles
