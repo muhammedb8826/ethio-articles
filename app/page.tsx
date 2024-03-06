@@ -1,55 +1,9 @@
 import Image from "next/image";
 import heroImage from "./assets/img/hero_content-writing-services-website-content-writer-essay.png";
 import Link from "next/link";
-import image1 from "./assets/img/pexels-1.jpg";
-import image2 from "./assets/img/pexels-2.jpg";
-import image3 from "./assets/img/pexels-3.jpg";
+import { data } from "./utils/data";
 
 export default function Home() {
-
-  const  data =[
-    {
-      "id": 1,
-      "title": "Top 5 JavaScript Frameworks to Learn in 2024",
-      "content": "This post explores the most popular and in-demand JavaScript frameworks for web development in 2024. We'll discuss the key features, use cases, and learning resources for React, Angular, Vue.js, Svelte, and Next.js.",
-      "author": "Sarah Jones",
-      "image": image1,
-      "category": "Development"
-    },
-    {
-      "id": 2,
-      "title": "Exploring the Hidden Gems of Iceland: A 5-Day Itinerary",
-      "content": "This post unveils a unique itinerary for a 5-day adventure in Iceland, venturing beyond the tourist hotspots. Discover breathtaking waterfalls, geothermal wonders, charming towns, and breathtaking landscapes.",
-      "author": "David Miller",
-      "image": image2,
-      "category": "Travel"
-    },
-    {
-      "id": 3,
-      "title": "The Ultimate Guide to Making Perfect Vegetarian Burgers",
-      "content": "Dive into the secrets of creating delicious and satisfying vegetarian burgers. Explore patty options using lentils, black beans, or chickpeas, along with tips for crafting flavorful toppings and burger buns.",
-      "author": "Emily Chen",
-      "image":image3,
-      "category": "Cooking"
-    },
-    {
-      "id": 4,
-      "title": "Sustainable Fashion Trends for Spring/Summer 2024",
-      "content": "This post explores eco-conscious fashion trends for the upcoming season. Discover sustainable materials, ethical production practices, and tips for incorporating these trends into your wardrobe.",
-      "author": "Michael Lee",
-      "image": image1,
-      "category": "Fashion"
-    },
-    {
-      "id": 5,
-      "title": "The Joys of Hiking: Finding Peace in Nature",
-      "content": "Share your experience with hiking and how it brings peace, mindfulness, and a connection with nature. Describe the challenges and rewards, and inspire others to explore the outdoors.",
-      "author": "Muhammed",
-      "image": image2,
-      "category": "Lifestyle"
-    }
-  ]
-  
   return (
     <main className="min-h-screen bg-white dark:bg-gray-900 py-10">
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
@@ -104,82 +58,82 @@ export default function Home() {
           </div>
           {data.map((item) => (
             <Link key={item.id} href={`/blog/${item.id}`}>
-          <div  className="grid grid-cols-1 mb-6 md:grid-cols-[40%,1fr] border-gray-200 rounded-md border dark:border-gray-800 gap-2">
-            <div>
-              <Image
-                src={item.image}
-                alt=""
-                className="object-cover w-full rounded-md h-80 md:h-full"
-              />
-            </div>
-            <div className="px-4 py-4 lg:px-2 ">
-              <a
-                href="#"
-                className="text-sm font-medium text-gray-600 dark:text-gray-400 "
-              >
-                June 4, 2022
-              </a>
-              <div className="w-8 pb-1 mb-4 border-b border-gray-600 dark:border-gray-400"></div>
-              <h2 className="mt-2 mb-4 text-xl font-semibold text-gray-600 dark:text-gray-300 ">
-                {item.title}
-              </h2>
-              <p className="mb-4 text-sm text-gray-500 dark:text-gray-400">
-                {item.content}
-              </p>
-              <div className="flex items-center ">
-                <a
-                  href="#"
-                  className="flex items-center mr-4 text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-100"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="w-4 h-4 mr-1 bi bi-eye"
-                    viewBox="0 0 16 16"
+              <div className="grid grid-cols-1 mb-6 md:grid-cols-[40%,1fr] border-gray-200 rounded-md border dark:border-gray-800 gap-2">
+                <div>
+                  <Image
+                    src={item.image}
+                    alt=""
+                    className="object-cover w-full rounded-md h-80 md:h-full"
+                  />
+                </div>
+                <div className="px-4 py-4 lg:px-2 ">
+                  <Link
+                    href="#"
+                    className="text-sm font-medium text-gray-600 dark:text-gray-400 "
                   >
-                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                  </svg>
-                  8sec read
-                </a>
-                <a
-                  href="#"
-                  className="flex items-center mr-4 text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-100"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="w-4 h-4 mr-1 bi bi-chat"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"></path>
-                  </svg>
-                  Comments
-                </a>
-                <a
-                  href="#"
-                  className="flex items-center mr-4 text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-100"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="w-4 h-4 mr-1 bi bi-archive"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"></path>
-                  </svg>
-                  Slider
-                </a>
+                    June 4, 2022
+                  </Link>
+                  <div className="w-8 pb-1 mb-4 border-b border-gray-600 dark:border-gray-400"></div>
+                  <h2 className="mt-2 mb-4 text-xl font-semibold text-gray-600 dark:text-gray-300 ">
+                    {item.title}
+                  </h2>
+                  <p className="mb-4 text-sm text-gray-500 dark:text-gray-400">
+                    {item.content}
+                  </p>
+                  <div className="flex items-center ">
+                    <Link
+                      href="#"
+                      className="flex items-center mr-4 text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-100"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        className="w-4 h-4 mr-1 bi bi-eye"
+                        viewBox="0 0 16 16"
+                      >
+                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                      </svg>
+                      8sec read
+                    </Link>
+                    <Link
+                      href="#"
+                      className="flex items-center mr-4 text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-100"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        className="w-4 h-4 mr-1 bi bi-chat"
+                        viewBox="0 0 16 16"
+                      >
+                        <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"></path>
+                      </svg>
+                      Comments
+                    </Link>
+                    <Link
+                      href="#"
+                      className="flex items-center mr-4 text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-100"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        className="w-4 h-4 mr-1 bi bi-archive"
+                        viewBox="0 0 16 16"
+                      >
+                        <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"></path>
+                      </svg>
+                      Slider
+                    </Link>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          </Link>
+            </Link>
           ))}
         </div>
       </section>
